@@ -158,17 +158,36 @@ This repository is **beginner-friendly** and provides the necessary tools to get
 ## **Types of Data**
 
 ### **Supervised Learning**
-  - In supervised learning, the dataset contains labeled data (target variable is known). The goal is to learn a mapping from input features to the target variable.
-  - Common algorithms: Regression (for continuous outputs) and Classification (for discrete outputs).
-  - This repository mainly deals with supervised regression tasks.
+  - **Definition**: In supervised learning, the dataset contains labeled data, meaning the target variable (the outcome you're trying to predict) is known. The model is trained to learn a mapping from input features to the target variable.
+  - **Common Algorithms**:
+    - **Regression**: For predicting continuous values (e.g., predicting house prices or stock prices).
+    - **Classification**: For predicting discrete classes or categories (e.g., detecting spam emails or classifying diseases).
+  - **Use in This Repository**: This repository mainly deals with **supervised learning regression tasks** (i.e., predicting continuous outcomes).
 
 ### **Unsupervised Learning**
-  - In unsupervised learning, the dataset contains no labels. The goal is to find hidden patterns or structures in the data.
-  - Common techniques include Clustering (e.g., K-means) and Dimensionality Reduction (e.g., PCA).
+  - **Definition**: In unsupervised learning, the dataset does not contain labels (i.e., the target variable is unknown). The goal is to identify hidden patterns or structures in the data without prior knowledge of the outcomes.
+  - **Common Techniques**:
+    - **Clustering**: Grouping similar data points into clusters (e.g., K-means, DBSCAN).
+    - **Dimensionality Reduction**: Reducing the number of features in the dataset while maintaining essential information (e.g., PCA, t-SNE).
+  - **Use in Modern Frameworks**: Techniques like clustering and dimensionality reduction are often implemented in popular frameworks such as **TensorFlow** and **PyTorch**.
 
-### **Regressor vs Classifier**
-  - **Regressor**: A model that predicts continuous values (e.g., predicting house prices, temperature, etc.). Example: Decision Tree Regressor.
-  - **Classifier**: A model that predicts discrete categories or classes (e.g., spam detection, heart disease classification). Example: Logistic Regression, K-Nearest Neighbors.
+---
+## **Regressor vs Classifier**
+
+### **Regressor**
+  - **Definition**: A **regressor** is a model used to predict continuous values (real numbers). These models are used when the target variable is a quantity.
+  - **Example Use Cases**:
+    - Predicting house prices, temperature, or sales figures.
+  - **Common Examples**: 
+    - Decision Tree Regressor, Linear Regression, Random Forest Regressor.
+
+### **Classifier**
+  - **Definition**: A **classifier** is a model used to predict discrete categories or classes. These models are used when the target variable is a category or class label.
+  - **Example Use Cases**:
+    - Spam detection, disease diagnosis, or image classification.
+  - **Common Examples**:
+    - Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM).
+
 
 ---
 ## **How to Use This Repository**
